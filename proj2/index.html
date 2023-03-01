@@ -189,7 +189,7 @@
   Briefly explain how you implemented the edge split operation and describe any interesting implementation / debugging tricks you have used.
 </b>
 <p>
-    To implement the split operation, I drew out the original edge, the two triangles that it touches, and all the associated components. I referenced the CMU guide for the naming (just for convenience!) the "BEFORE FLIP" which in this case would be the "BEFORE SPLIT" state. Then, I performed the split on paper, adding and naming the new components (6 halfedges, 1 vertex, 3 edges, 2 faces), as well as renaming existing ones where necessary. Then, I coded it using this same process (which was also similar to the process in Part 4). This one was pretty straightforward so I didn't have to debug or do anything super interesting. It was just kind of annoying to set/update all the components — it was quite easy to make a typo :(
+    To implement the split operation, I drew out the original edge, the two triangles that it touches, and all the associated components. I referenced the <a href="http://15462.courses.cs.cmu.edu/fall2015content/misc/HalfedgeEdgeOpImplementationGuide.pdf">CMU implementation guide</a> for the naming (just for convenience!) the "BEFORE FLIP" which in this case would be the "BEFORE SPLIT" state. Then, I performed the split on paper, adding and naming the new components (6 halfedges, 1 vertex, 3 edges, 2 faces), as well as renaming existing ones where necessary. Then, I coded it using this same process (which was also similar to the process in Part 4). This one was pretty straightforward so I didn't have to debug or do anything super interesting. It was just kind of annoying to set/update all the components — it was quite easy to make a typo :(
 </p>
 <br>
 
